@@ -30,6 +30,9 @@
 ```
 - Save the changes (Ctrl + X, Y, Enter).
 
+- Run this line to start this line:
+  ```sudo systemctl enable vncserver.service```
+
 ## 3. Install TightVNC Client on Windows 10 PC
 - Download and install the TightVNC client from the official website.
 - Choose to install only the client portion during installation.
