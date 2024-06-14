@@ -22,11 +22,14 @@
 
 - Add the following content BUT making sure you change the user from pi if your user has another name.
 ```
-[Unit] Description=TightVNC Server After=network.target
+[Unit]
+Description=TightVNC Server After=network.target
 
-[Service] Type=forking User=pi ExecStart=/usr/bin/vncserver :1 ExecStop=/usr/bin/vncserver -kill :1
+[Service]
+Type=forking User=pi ExecStart=/usr/bin/vncserver :1 ExecStop=/usr/bin/vncserver -kill :1
 
-[Install] WantedBy=multi-user.target
+[Install]
+WantedBy=multi-user.target
 ```
 - Save the changes (Ctrl + X, Y, Enter).
 
